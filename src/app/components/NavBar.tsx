@@ -4,7 +4,7 @@ import {
   HiOutlineBookOpen,
   HiOutlineHome,
   HiPlus,
-  HiOutlineUser,
+  HiOutlineUsers,
 } from "react-icons/hi2";
 
 export default function NavBar() {
@@ -18,7 +18,7 @@ export default function NavBar() {
         <HiPlus className="h-8 w-8" />
       </Link>
       <Link href="/">
-        <HiOutlineUser className="h-8 w-8" />
+        <HiOutlineUsers className="h-8 w-8" />
       </Link>
     </nav>
   );
