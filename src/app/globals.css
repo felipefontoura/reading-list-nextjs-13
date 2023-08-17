@@ -32,16 +32,20 @@
   }
 
   .btn,
-  button {
+  button[type=submit] {
     @apply inline-flex items-center gap-2 rounded-full bg-gray-700 px-5 py-1 font-heading font-semibold text-white transition-colors hover:bg-gray-800;
   }
+}
 
-  nav {
-    @apply fixed inset-x-0 bottom-0 flex h-20 items-center justify-center gap-8 border-t border-gray-500 bg-gray-400 md:inset-y-0 md:left-0 md:right-auto md:h-full md:w-20 md:flex-col md:justify-start md:border-r md:py-6;
-
-    a {
-      @apply inline-flex h-16 w-16 items-center justify-center rounded-full bg-gray-700 text-white transition-colors hover:bg-gray-800 md:h-12 md:w-12
-      ;
-    }
-  }
+::-webkit-scrollbar {
+  @apply w-2
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-500
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-800
 }
