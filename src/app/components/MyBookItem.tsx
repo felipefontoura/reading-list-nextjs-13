@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import MyBookItemConclude from "@components/MyBookItemConclude";
 
@@ -17,7 +18,9 @@ export default function MyBookItem({ item }: MyBookItemProps) {
         )}
       </div>
       <div>
-        <h3>{item.title}</h3>
+        <Link href={`/book/${item.id}`}>
+          <h3 className="text-gray-800 underline">{item.title}</h3>
+        </Link>
         <p className="mb-2 text-sm">{item.author}</p>
         <MyBookItemConclude item={item} />
       </div>
