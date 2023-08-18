@@ -3,6 +3,7 @@ import Image from "next/image";
 import FeedItem from "../interfaces/FeedItem";
 
 import FeedItemLikeButton from "./FeedItemLikeButton";
+import Link from "next/link";
 
 interface FeedItemProps {
   item: FeedItem;
@@ -22,12 +23,12 @@ export default function FeedItem({ item }: FeedItemProps) {
         <div className="mt-2">
           <h3 className="font-sans">{item.user.name}</h3>
           <p className="italic">{item.message}</p>
-          <a
-            href="#"
+          <Link
+            href={`/books/${item.book.id}`}
             className="font-heading text-gray-700 underline transition-colors hover:text-gray-800"
           >
             {item.book.title}, {item.book.author}
-          </a>
+          </Link>
           <div className="mt-2 flex items-center gap-1 text-sm text-gray-800">
             <FeedItemLikeButton item={item} />
           </div>

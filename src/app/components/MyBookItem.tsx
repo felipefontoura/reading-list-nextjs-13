@@ -18,7 +18,7 @@ export default function MyBookItem({ item }: MyBookItemProps) {
         )}
       </div>
       <div>
-        <Link href={`/book/${item.id}`}>
+        <Link href={`/books/${item.id}`}>
           <h3 className="text-gray-800 underline">{item.title}</h3>
         </Link>
         <p className="mb-2 text-sm">{item.author}</p>
