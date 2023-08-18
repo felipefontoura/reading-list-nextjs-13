@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar";
 import Hero from "@components/Hero";
-import MyReadings from "@components/MyReadings";
+import MyBooks from "@/app/components/MyBooks";
 import Goals from "@components/Goals";
 import Feed from "@/app/components/Feed";
 
@@ -11,7 +11,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row">
           <div className="md:basis-2/3">
             <Hero />
-            <MyReadings />
+            <MyBooks />
             <Goals />
           </div>
           <div className="md:basis-1/3">

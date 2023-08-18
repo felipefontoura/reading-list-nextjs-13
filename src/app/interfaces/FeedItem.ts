@@ -1,10 +1,11 @@
+import Book from "./Book";
+
 export default interface FeedItem {
   id: string;
-  userName: string;
-  userAvatar: string;
-  bookTitle: string;
-  bookAuthor: string;
-  bookUrl: string;
-  body: string;
-  createdAt: string;
+  message: string;
+  user: {
+    name: string;
+    avatar: string;
+  };
+  book: Book;
 }

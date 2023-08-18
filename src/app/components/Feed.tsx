@@ -1,6 +1,6 @@
-import { fetchFeed } from "../api";
-
 import FeedItem from "@components/FeedItem";
+
+import { fetchFeed } from "@/app/api";
 
 export default async function Feed() {
   const feedItems = await fetchFeed();
