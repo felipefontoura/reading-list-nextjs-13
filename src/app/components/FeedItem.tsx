@@ -30,7 +30,7 @@ export default function FeedItem({ item }: FeedItemProps) {
             {item.book.title}, {item.book.author}
           </Link>
           <div className="mt-2 flex items-center gap-1 text-sm text-gray-800">
-            <FeedItemLikeButton item={item} />
+            <FeedItemLikeButton />
           </div>
         </div>
       </div>
